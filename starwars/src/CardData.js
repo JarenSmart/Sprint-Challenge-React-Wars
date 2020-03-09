@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const CardBox = styled.div`
   border: 2px solid black;
-  height: 70vh;
+  height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -18,24 +18,24 @@ const CharName = styled.h4`
 `;
 
 const CharBody = styled.p`
-  color: white;
-  font-size: 15px;
+  color: ${props => (props.primary ? "white" : "palevioletred")};
+  font-size: 18px;
 `;
 const CharHair = styled.p`
-  color: white;
-  font-size: 15px;
+  color: ${props => (props.primary ? "white" : "palevioletred")};
+  font-size: 18px;
 `;
 const CharSkin = styled.p`
-  color: white;
-  font-size: 15px;
+  color: ${props => (props.primary ? "white" : "palevioletred")};
+  font-size: 18px;
 `;
 const CharBirth = styled.p`
-  color: white;
-  font-size: 15px;
+  color: ${props => (props.primary ? "white" : "palevioletred")};
+  font-size: 18px;
 `;
 const CharGender = styled.p`
-  color: white;
-  font-size: 15px;
+  color: ${props => (props.primary ? "white" : "palevioletred")};
+  font-size: 18px;
 `;
 
 const CardData = props => {
